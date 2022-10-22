@@ -665,16 +665,26 @@ a {
         border-radius: 50%;
     }
 
+    .close-button:hover,
+    .close-button:focus {
+        cursor: pointer;
+    }
+
     .close-icon {
         top: 0;
         right: 0;
 
         width: 18px;
         height: 18px;
+
+        fill: var(--logo-second-color);
+
+        transition: fill 250ms var(--timing-function);
     }
 
-    .close-icon {
-        fill: var(--logo-second-color);
+    .close-button:hover .close-icon,
+    .close-button:focus .close-icon {
+        fill: var(--main-color);
     }
             /* Footer */
 
